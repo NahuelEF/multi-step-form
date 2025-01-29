@@ -1,0 +1,80 @@
+{
+  "SIDEBAR": [
+    {
+      "STEP_NUMBER": 1,
+      "LABEL": "Your info"
+    },
+    {
+      "STEP_NUMBER": 2,
+      "LABEL": "Select plan"
+    },
+    {
+      "STEP_NUMBER": 3,
+      "LABEL": "Add-ons"
+    },
+    {
+      "STEP_NUMBER": 4,
+      "LABEL": "Summary"
+    }
+  ],
+  "STEP_ONE": {
+    "TITLE": "Personal info",
+    "DESCRIPTION": "Please provide your name, email address, and phone number."
+  },
+  "STEP_TWO": {
+    "TITLE": "Select your plan",
+    "DESCRIPTION": "You have the option of monthly or yearly billing.",
+    "PLANS": [
+      {
+        "ID": 1,
+        "ICON": "Arcade",
+        "TITLE": "Arcade",
+        "PRICE": 9
+      },
+      {
+        "ID": 2,
+        "ICON": "Advanced",
+        "TITLE": "Advanced",
+        "PRICE": 12
+      },
+      {
+        "ID": 3,
+        "ICON": "Pro",
+        "TITLE": "Pro",
+        "PRICE": 15
+      }
+    ]
+  },
+  "STEP_THREE": {
+    "TITLE": "Pick add-ons",
+    "DESCRIPTION": "Add-ons help enhance your gaming experience.",
+    "ADDONS": [
+      {
+        "ID": 1,
+        "NAME": "Online service",
+        "DESCRIPTION": "Access to multiplayer games",
+        "PRICE": 1
+      },
+      {
+        "ID": 2,
+        "NAME": "Larger storage",
+        "DESCRIPTION": "Extra 1TB of cloud save",
+        "PRICE": 2
+      },
+      {
+        "ID": 3,
+        "NAME": "Customizable Profile",
+        "DESCRIPTION": "Custom theme on your profile",
+        "PRICE": 2
+      }
+    ]
+  },
+  "STEP_FOUR": {
+    "TITLE": "Finishing up",
+    "DESCRIPTION": "Double-check everything looks OK before confirming."
+  },
+  "STEP_FIVE": {
+    "TITLE": "Thank you!",
+    "DESCRIPTION": "Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com."
+  }
+}
