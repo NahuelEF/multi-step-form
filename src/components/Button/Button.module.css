@@ -1,0 +1,33 @@
+.button {
+  padding-block: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  text-transform: capitalize;
+  transition-property: color, background;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.primary {
+  min-width: 7rem;
+  padding-inline: 1rem;
+  color: var(--neutral-white);
+  background-color: var(--primary-marine-blue);
+
+  &:hover,
+  &:focus {
+    background-color: hsl(from var(--primary-marine-blue) h s l / 90%);
+  }
+}
+
+.secondary {
+  color: var(--neutral-cool-gray);
+  background-color: var(--neutral-white);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-marine-blue);
+  }
+}
