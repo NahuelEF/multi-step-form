@@ -1,0 +1,42 @@
+.field {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    'label error'
+    'input input';
+  grid-template-columns: 1fr;
+  row-gap: 0.25rem;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  text-transform: capitalize;
+  grid-area: label;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--neutral-cool-gray);
+  border-radius: 0.5rem;
+  color: var(--primary-marine-blue);
+  font-weight: var(--font-weight-medium);
+  caret-color: var(--primary-marine-blue);
+  grid-area: input;
+
+  &:focus {
+    outline: none;
+    border-color: var(--primary-purplish-blue);
+  }
+}
+
+.error {
+  border-color: var(--primary-strawberry-red) !important;
+}
+.errorMessage {
+  color: var(--primary-strawberry-red);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  grid-area: error;
+}
