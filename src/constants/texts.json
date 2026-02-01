@@ -27,19 +27,19 @@
     "PLANS": [
       {
         "ID": 1,
-        "ICON": "Arcade",
+        "VALUE": "arcade",
         "TITLE": "Arcade",
         "PRICE": 9
       },
       {
         "ID": 2,
-        "ICON": "Advanced",
+        "VALUE": "advanced",
         "TITLE": "Advanced",
         "PRICE": 12
       },
       {
         "ID": 3,
-        "ICON": "Pro",
+        "VALUE": "pro",
         "TITLE": "Pro",
         "PRICE": 15
       }
