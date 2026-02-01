@@ -1,0 +1,61 @@
+.radio {
+  padding: 1rem;
+  border: 1px solid var(--neutral-cool-gray);
+  border-radius: 0.5rem;
+  background-color: var(--neutral-white);
+  display: flex;
+  align-items: start;
+  flex: 1 0 8rem;
+  gap: 0.45rem;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--primary-purplish-blue);
+  }
+
+  &:has(:checked) {
+    border-color: var(--primary-purplish-blue);
+    background-color: var(--primary-pastel-blue);
+  }
+
+  @media (width > 382px) {
+    min-height: 10rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.details {
+  margin-top: 2rem;
+  color: var(--primary-marine-blue);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+
+  span {
+    display: block;
+  }
+
+  @media (width <= 382px) {
+    margin-top: 0;
+  }
+}
+
+.bonus,
+.price {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+}
+
+.price {
+  color: var(--neutral-cool-gray);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.input {
+  opacity: 0;
+  pointer-events: none;
+}
