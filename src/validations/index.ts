@@ -22,7 +22,7 @@ const personalInfoSchema = z.object({
 
 const planSchema = z.object({
   plan: z.enum(['arcade', 'advanced', 'pro']),
-  billingCycle: z.boolean().optional(),
+  billingCycle: z.enum(['monthly', 'yearly']),
 });
 
 const addOnsSchema = z.object({
