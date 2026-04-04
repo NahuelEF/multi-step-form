@@ -1,6 +1,7 @@
 import IconAdvanced from '@/assets/images/icon-advanced.svg';
 import IconArcade from '@/assets/images/icon-arcade.svg';
 import IconPro from '@/assets/images/icon-pro.svg';
+import { calculatePriceYearly } from '@/utils';
 import { FormData } from '@/validations';
 import { useFormContext } from 'react-hook-form';
 import { Form } from '@/components/Form/Form';
@@ -22,11 +23,6 @@ export const PlanSelection = () => {
 
   const isYearly = billingCycle === 'yearly';
 
-  const calculatePrice = (basePrice: number) => {
-    const yearlyMultiplier = 10;
-    return isYearly ? basePrice * yearlyMultiplier : basePrice;
-  };
-
   return (
     <>
       <Form.Header title={STEP_TWO.TITLE} description={STEP_TWO.DESCRIPTION} />
@@ -36,7 +32,7 @@ export const PlanSelection = () => {
             <Radio
               key={plan.ID}
               label={plan.TITLE}
-              price={`${calculatePrice(plan.PRICE)}/${isYearly ? 'yr' : 'mo'}`}
+              price={calculatePriceYearly(plan.PRICE, isYearly)}
               bonus={isYearly && '2 months free'}
               value={plan.VALUE}
               icon={planIcons[plan.VALUE as keyof typeof planIcons]}
