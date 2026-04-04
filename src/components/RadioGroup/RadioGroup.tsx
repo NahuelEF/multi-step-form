@@ -16,7 +16,7 @@ const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
       <input ref={ref} className={style.input} type='radio' value={value} {...props} />
       <div className={style.details}>
         <strong>{label}</strong>
-        <span className={style.price}>{`$${price}`}</span>
+        <span className={style.price}>{price}</span>
         {bonus && <span className={style.bonus}>{bonus}</span>}
       </div>
     </label>
