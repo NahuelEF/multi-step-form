@@ -53,19 +53,22 @@
         "ID": 1,
         "NAME": "Online service",
         "DESCRIPTION": "Access to multiplayer games",
-        "PRICE": 1
+        "PRICE": 1,
+        "VALUE": "onlineService"
       },
       {
         "ID": 2,
         "NAME": "Larger storage",
         "DESCRIPTION": "Extra 1TB of cloud save",
-        "PRICE": 2
+        "PRICE": 2,
+        "VALUE": "largerStorage"
       },
       {
         "ID": 3,
         "NAME": "Customizable Profile",
         "DESCRIPTION": "Custom theme on your profile",
-        "PRICE": 2
+        "PRICE": 2,
+        "VALUE": "customizableProfile"
       }
     ]
   },
