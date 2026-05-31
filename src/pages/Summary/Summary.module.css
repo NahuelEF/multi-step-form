@@ -1,0 +1,63 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tbody {
+  background-color: var(--neutral-light-gray);
+}
+
+.trow {
+  &:first-of-type {
+    border-bottom: 1px solid transparent;
+    background:
+      linear-gradient(var(--neutral-light-gray), var(--neutral-light-gray)) padding-box,
+      linear-gradient(
+          90deg,
+          var(--neutral-light-gray) 0.5rem,
+          var(--neutral-cool-gray) 0.5rem,
+          var(--neutral-cool-gray) 98%,
+          var(--neutral-light-gray) 0.5rem
+        )
+        border-box;
+
+    .theader,
+    .tdata {
+      color: var(--primary-marine-blue);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+}
+
+.theader,
+.tdata {
+  padding: 0.25rem 0.5rem;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+}
+
+.theader {
+  text-align: left;
+  color: var(--neutral-cool-gray);
+}
+
+.tdata {
+  text-align: right;
+  color: var(--primary-marine-blue);
+}
+
+.tfoot {
+  background-color: var(--neutral-white);
+
+  .tdata:last-child {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-purplish-blue);
+  }
+}
+
+.changebtn {
+  color: var(--neutral-cool-gray);
+  text-decoration: underline;
+  cursor: pointer;
+}
