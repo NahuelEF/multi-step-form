@@ -1,0 +1,47 @@
+.sidebar {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: url('@/assets/images/bg-sidebar-desktop.svg') no-repeat center / cover
+    var(--primary-purplish-blue);
+}
+
+.steps {
+  counter-reset: step;
+}
+.steps > * + * {
+  margin-block-start: 1rem;
+}
+
+.step {
+  color: var(--neutral-white);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  counter-increment: step;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &.active {
+    &::before {
+      color: var(--primary-marine-blue);
+      background-color: var(--primary-light-blue);
+    }
+  }
+
+  &::before {
+    content: counter(step);
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-content: center;
+    border-radius: 100%;
+    border: 1px solid var(--neutral-white);
+  }
+}
+
+.stepNumber {
+  display: block;
+  color: var(--neutral-cool-gray);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-sm);
+}
