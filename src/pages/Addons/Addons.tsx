@@ -21,7 +21,7 @@ export const Addons = () => {
             title={addOn.NAME}
             description={addOn.DESCRIPTION}
             price={calculatePriceYearly(addOn.PRICE, isYearly)}
-            value={addOn.VALUE as string}
+            value={addOn.VALUE}
             {...register('addOns')}
           />
         ))}
